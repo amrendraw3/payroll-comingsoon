@@ -83,7 +83,8 @@ margin: 0 auto;
 position: relative;
 width: 920px;
 z-index: 1;
-margin-top: 6%;
+text-align: center;
+padding-top: 2%;
 }
 #socialIcons {
 display:block;
