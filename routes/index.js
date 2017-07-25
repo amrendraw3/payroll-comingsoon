@@ -58,10 +58,12 @@ router.get('/get-all-subscribers', function(req, res, next) {
 	  		console.log('Subscriber list found!')
 				db.close();
 				console.log(data);
-				res.json (data);
+				// res.json (data);
+				res.render('subscribers', {success: true, info: data.length + " subscribers found", data: data})
 	  	} else {
 	  		console.log('Visitor not subscribed!')
-				res.json ({data: 'No records found!'});
+				// res.json ();
+				res.render('subscribers', {success: false, info: 'No records found!'})
 				db.close();
 	  	}
 	  });
