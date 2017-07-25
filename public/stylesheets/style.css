@@ -159,10 +159,13 @@ clear: both;
 text-align:center;
 }
 #subscribe input {
-background: rgba(255, 255, 255, 0.52);
+/*background: rgba(255, 255, 255, 0.52);*/
+background: rgba(255, 255, 255, 0.65);
 color: #000; 
 vertical-align: middle;
 width: 293px;
+font-size: 12px;
+font-weight: 600;
 border: 1px solid rgba(255, 255, 255, 0.76);
 padding: 0 10px;
 height: 40px;
@@ -304,4 +307,30 @@ margin:10px;
 	footer{
 	position:relative !important;
 	}
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  font-size: 12px;
+  /*font-weight: 600;*/
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  font-size: 12px;
+  /*font-weight: 600;*/
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  font-size: 12px;
+  /*font-weight: 600;*/
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  font-size: 12px;
+  /*font-weight: 600;*/
+}
+
+.transparent-layer {
+	background-color: rgba(0, 0, 0, 0.77);
+	height: 100vh;
 }

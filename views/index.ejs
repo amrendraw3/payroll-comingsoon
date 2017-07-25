@@ -43,9 +43,9 @@ Note: Please use our back link in your site (webthemez.com)
 	</script>
 <% } %>
 <div id="subscribe"> 
-	<form action="/subscribe" method="post">
-		<p><input name="email" placeholder="Enter your email address"  type="email" id=""/>
-		<input type="submit" value="Submit"/></p>
+	<form action="/subscribe" id="subscription" method="post">
+		<p><input name="email" placeholder="Enter Your Email Address"  type="email" id=""/>
+		<input type="button" value="Submit" onClick="document.getElementById('subscription').submit();" /></p>
 	</form>
 	<div id="socialIcons">
 		<ul> 

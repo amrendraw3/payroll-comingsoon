@@ -61,7 +61,7 @@
             this.$container = a(c);
             this.$root = this.isBody ? l ? a(d) : a(document) : this.$container;
             c = this.$container.children(".backstretch").first();
-            this.$wrap = c.length ? c : a('<div class="backstretch"></div>').css(r).appendTo(this.$container);
+            this.$wrap = c.length ? c : a('<div class="backstretch"><div class="transparent-layer"></div></div>').css(r).appendTo(this.$container);
             this.isBody || (c = this.$container.css("position"), b = this.$container.css("zIndex"), this.$container.css({
                 position: "static" === c ? "relative" : c,
                 zIndex: "auto" === b ? 0 : b,
